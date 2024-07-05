@@ -29,7 +29,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
       Scaffold(
         appBar: AppBar(
           title: Text(
-            '${args.name}',
+            args.name,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
         ),
