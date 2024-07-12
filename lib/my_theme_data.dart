@@ -33,4 +33,38 @@ class MyThemeData {
       ),
     ),
   );
+
+  static final ThemeData darkTheme = ThemeData(
+    primaryColor: AppColors.primaryDarkColor,
+    scaffoldBackgroundColor: Colors.transparent,
+    appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        iconTheme: IconThemeData(color: AppColors.whiteColor)),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      selectedItemColor: AppColors.yellowColor,
+      unselectedItemColor: AppColors.whiteColor,
+    ),
+    textTheme: const TextTheme(
+      bodyLarge: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: AppColors.whiteColor),
+      bodyMedium: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.w600,
+          color: AppColors.whiteColor),
+      bodySmall: TextStyle(
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
+        color: AppColors.whiteColor,
+      ),
+      titleLarge: TextStyle(
+        fontSize: 22,
+        fontWeight: FontWeight.w400,
+        color: AppColors.whiteColor,
+      ),
+    ),
+  );
 }
